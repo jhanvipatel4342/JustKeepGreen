@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Eco-Friendly Product Store</title>
+    <link rel="stylesheet" href="JustKeepGreen.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="JustKeepGreen">
+        </div>
+        <h1>JustKeepGreen</h1>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="calculate.html">Calculate</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <div class="icons">
+    
+</div>
+    </nav>
+    <!-- Payment Section -->
+    <section class="payment">
+        <div class="container">
+            <h1>Payment Details</h1>
+
+            <!-- Payment Form -->
+            <form id="payment-form" action="submit_payment.php" method="POST">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required></br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required></br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"></br>
+                </fieldset>
+
+                <!-- Payment Information -->
+                <fieldset>
+                    <legend>Payment Information</legend>
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" pattern="[0-9]{16}" required>
+                    <small>Enter 16 digits without spaces</small></br>
+
+                    <label for="expiry">Expiration Date:</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/\d{2}" required>
+                    <small>Format: MM/YY</small></br>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" pattern="[0-9]{3,4}" required>
+                    <small>Enter 3 or 4 digits</small></br>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Pay Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-info"></div>
+        <p>&copy; 2024 JustKeepGreen. All rights reserved.</p>
+    
+        
+            <p>Contact us: justkeepgreen@gmail.com</p>
+            <div class="social-links">
+                <a href="#"><img src="fb.png" alt="Facebook"></a>
+                <a href="#"><img src="ig.png" alt="Instagram"></a>
+                <a href="#"><img src="twit.png" alt="Twitter"></a>
+            </div>
+        </div>
+        
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="JustKeepGreen.js"></script>
+</body>
+</html>
